@@ -1,0 +1,119 @@
+/* Resets */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 10px;
+  /* border: 1px solid grey; */
+}
+
+/* general */
+body {
+  line-height: 2.4rem;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  color: rgb(105, 146, 122);
+  background-image: url("/images/cactus.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  height: 50vh;
+  background-position: center;
+  filter: grayscale(70%);
+}
+nav {
+  background-color: rgb(238, 232, 223);
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+}
+nav a {
+  background-color: rgb(144, 156, 149);
+  color: rgb(210, 218, 213);
+  border: 1px solid black;
+  padding: 0 20px;
+}
+nav a:hover {
+  background-color: rgb(196, 201, 198);
+  color: rgb(144, 156, 149);
+  transition: 0.9s;
+}
+.header-text {
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 50%;
+  padding-top: 10%;
+}
+
+.section-1 {
+  background-color: rgb(144, 156, 149);
+  text-align: center;
+  border: 1px solid black;
+}
+.section-1-p {
+  width: 80%;
+  color: rgb(114, 121, 117);
+  padding: 3%;
+  font-size: 1.2rem;
+  margin: 0% auto;
+  background-color: rgb(238, 232, 223);
+  border-radius: 5px;
+}
+.container {
+  padding: 5% 0;
+}
+.section-1-h {
+  padding-bottom: 5%;
+  color: rgb(86, 99, 89);
+}
+.section-2 {
+  border-radius: 5px;
+}
+.icons-container {
+  background-color: rgb(238, 232, 223);
+
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0;
+}
+.third {
+  width: 30%;
+  text-align: center;
+  color: rgb(144, 156, 149);
+}
+
+.icon {
+  font-size: 9rem;
+  margin-bottom: 14%;
+}
+footer {
+  background-color: rgb(144, 156, 149);
+  text-align: center;
+  padding: 7% 0 2% 0;
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  header {
+    /* display: none; */
+  }
+  nav {
+    text-align: center;
+    flex-direction: column;
+  }
+  nav a {
+    margin-top: 4%;
+  }
+  .icons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .third {
+    margin-top: 15%;
+  }
+}
