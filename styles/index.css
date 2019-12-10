@@ -19,6 +19,8 @@ a {
 
 /* Header */
 header {
+  text-shadow: 1px 1px 2px rgb(94, 87, 87), 0 0 25px rgb(55, 59, 52),
+    0 0 5px rgb(93, 95, 93);
   color: rgb(105, 146, 122);
   background-image: url("/images/cactus.jpg");
   background-repeat: no-repeat, repeat;
@@ -26,23 +28,40 @@ header {
   height: 50vh;
   background-position: center;
   filter: grayscale(70%);
+  /* box-shadow: 10px 10px 5px rgb(137, 150, 137); */
+  box-shadow: inset 10px 0 30px #000000;
 }
 nav {
   background-color: rgb(238, 232, 223);
   display: flex;
   justify-content: space-around;
   padding: 4%;
+  box-shadow: inset 10px 0 30px #000000;
 }
 nav a {
-  background-color: rgb(144, 156, 149);
-  color: rgb(210, 218, 213);
-  border: 1px solid black;
-  padding: 0 20px;
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  padding-top: 0.4%;
 }
 nav a:hover {
-  background-color: rgb(196, 201, 198);
-  color: rgb(144, 156, 149);
-  transition: 0.9s;
+  background-color: #697771;
+  box-shadow: 0px 15px 20px rgba(132, 199, 172, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 .header-text {
   font-size: 2rem;
@@ -64,6 +83,11 @@ nav a:hover {
   margin: 0% auto;
   background-color: rgb(238, 232, 223);
   border-radius: 5px;
+  box-shadow: inset 0px 0 30px #000000;
+}
+.hero-image {
+  width: 80%;
+  filter: grayscale(80%);
 }
 .container {
   padding: 5% 0;
@@ -77,6 +101,7 @@ nav a:hover {
 }
 .icons-container {
   background-color: rgb(238, 232, 223);
+  box-shadow: inset 0px 0 30px #000000;
 
   display: flex;
   justify-content: space-around;
@@ -91,6 +116,7 @@ nav a:hover {
 .icon {
   font-size: 9rem;
   margin-bottom: 14%;
+  
 }
 footer {
   background-color: rgb(144, 156, 149);
@@ -99,15 +125,13 @@ footer {
   font-size: 1.3rem;
 }
 @media (max-width: 500px) {
-  header {
-    /* display: none; */
-  }
   nav {
     text-align: center;
     flex-direction: column;
+    justify-content: center;
   }
   nav a {
-    margin-top: 4%;
+    margin: 2% auto;
   }
   .icons-container {
     flex-direction: column;
